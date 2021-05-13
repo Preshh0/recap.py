@@ -40,8 +40,8 @@ intFraction = int(fraction)
 print(intFraction)
 '''not, or, and'''
 
-gender1 = input("Enter Gender: ")
-gender2 = input("Enter Gender: ")
+gender1 = "Male"#input("Enter Gender: ")
+gender2 = "Female"#input("Enter Gender: ")
 
 if gender1 and gender2 != "Male":
     print("Not the same gender.")
@@ -66,3 +66,22 @@ print("""Roger is
    
    
    years old.""")
+
+'''Lists'''
+
+
+Animals = ["Dog", "Cats", "Birds", "Reptiles", "Fishes"]
+file = Animals[1]
+Animals.append("Whale")
+#Or#
+Animals += ["Dolphins"]
+
+Animals.remove("Dolphins")
+#Animals.insert("Test", 1 ) Find out what is wrong, later.
+#Animals.sort() # this method doesn't work if there is a mixture of both integers and strings
+
+print("Cats" in Animals)
+print(Animals)
+print(len(Animals))
+print(sorted(Animals, key=str.lower))
+print(file)
