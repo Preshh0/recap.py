@@ -38,3 +38,31 @@ print(type(age) == int)
 fraction = 0.1
 intFraction = int(fraction)
 print(intFraction)
+'''not, or, and'''
+
+gender1 = input("Enter Gender: ")
+gender2 = input("Enter Gender: ")
+
+if gender1 and gender2 != "Male":
+    print("Not the same gender.")
+elif gender1 or gender2 == "Female":
+    print("One is definitely female.")
+else:
+    print("It is neither.")
+    
+output = len(gender1)
+print("Gender One is: ", output)
+'''The ternary Operator'''
+def is_adult(age):
+    return True if age > 18 else False
+
+'''multiline strings(use three quotes)'''
+
+print("""Roger is
+
+
+   8
+   
+   
+   
+   years old.""")
