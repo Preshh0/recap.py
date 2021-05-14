@@ -85,3 +85,21 @@ print(Animals)
 print(len(Animals))
 print(sorted(Animals, key=str.lower))
 print(file)
+
+'''Tuples'''
+names = ("Roger", "Syd", "John", "Mike", "Felix")
+print(len(names))
+print(sorted(names))#USING sORTED
+newTuple = names + ('Vanille', 'Vivian')
+print("Roger" in names)
+print(names[0])
+print(names[0:1])
+print (newTuple)
+
+'''Dictionaries'''
+Animalia = { "Name": "Dog",
+             "Age": 2,
+             "Height": 5
+            }
+
+print(Animalia)
